@@ -8,7 +8,8 @@ namespace FormsApp.Models
     {
         [Display(Name="Product Id")]
         public int ProductId { get; set; }
-        
+
+        [Required]
         [Display(Name="Product Name")]
         public string Name { get; set; } = string.Empty;
 
@@ -17,11 +18,10 @@ namespace FormsApp.Models
 
         [Display(Name="Image")]
         public string? Image { get; set; } = string.Empty;
-        public bool IsActive { get; set; }
 
-       
-        
-     
+        public bool IsActive { get; set; }
+        [Display(Name="Category")]
+
         public int? CategoryId { get; set; }
 
     }
